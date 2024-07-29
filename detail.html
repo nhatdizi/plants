@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <link rel="stylesheet" href="./asset/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/css/reset.css">
+    <link rel="stylesheet" href="./asset/css/header.css">
+    <link rel="stylesheet" href="./asset/css/detail.css">
+    <link rel="stylesheet" href="./asset/css/footer.css">
+    <link rel="stylesheet" href="./asset/reponsive/header.css">
+    <link rel="stylesheet" href="./asset/reponsive/footer.css">
+</head>
+
+<body>
+    <header>
+        <div class="header__top">
+            <div class="sidebar">
+                <i class="fa-solid fa-bars fa-lg menubar"></i>
+                <i class="fa-solid fa-xmark fa-xl close-menu"></i>
+
+                <ul class="sidebar-list">
+                    <li class="header__nav-item">
+                        <a href="index.html" style="font-weight: bold;">Home</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="plants.html">Plants</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/site-logo.svg" class="header__logo-img" alt="site-logo-white">
+                </a>
+            </div>
+
+            <div class="header__right">
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="plants.html" style="font-weight: bold;">Plants</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="about.html">About</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__actions">
+                    <div class="header__search">
+                        <input type="text" name="header__search-input" id="header__search-input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+    
+                    <div class="header__cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart__quantity">01</span>
+
+                        <div class="cart-tab">
+                            <div class="cart-top">
+                                <span>Shopping Cart</span>
+                                <i class="fa-solid fa-xmark cart-tab-close"></i>
+                            </div>
+                            
+                            <div class="list-cart">
+                                <div class="cart-item">
+                                    <div class="cart-item-description">
+                                        <div class="cart-item__img">
+                                            <a href="#" >
+                                                <img src="./asset/img/AraliaMing.jpg" alt="Aralia Ming">
+                                            </a>
+                                        </div>
+                                        
+                                        <div class="cart-item__detail">
+                                            <a href="#">
+                                                <p class="cart-item__name">Aralia Ming</p>
+                                            </a>
+                                            <span class="cart-item__quantity">1</span>
+                                            <i class="fa-solid fa-xmark"></i>
+                                            <span class="cart-item__price">$284.90</span>
+                                        </div>
+                                    </div>
+
+                                    <i class="fa-solid fa-xmark close"></i>
+                                </div>
+                            </div>
+
+                            <div class="subtotal">
+                                <span class="subtotal__name">Subtotal:</span>
+                                <span class="subtotal__price">$5000</span>
+                            </div>
+                            <div class="cart-tab-btn">
+                                <a href="cart.html" class="viewCart">
+                                    View Cart
+                                </a>
+                                <a href="checkout.html" class="checkout">
+                                    Checkout
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="header__account">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="header__account-dropdown">
+                            <div class="header__account-login">
+                                <a href="#">Login</a>
+                            </div>
+                            <div class="header__account-register">
+                                <a href="#">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </header>
+
+    <!-- ---------------CONTAINER------------------- -->
+    <div class="container">
+        <div class="container__filter">
+            <div class="product">
+                <div class="product-overview">
+                    <div class="product-gallery">
+                        <div class="product-gallery-img">
+                            <img src="./asset/img/BirdofParadise.jpg" alt="Birdof Paradise">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        
+                        <div class="thumbnail-list">
+                            <div class="thumbnail">
+                                <img src="./asset/img/BirdofParadise.jpg" alt="Birdof Paradise">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="./asset/img/BirdofParadise2.jpg" alt="Birdof Paradise">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__details">
+                        <p class="product__name">
+                            Bird of Paradise
+                        </p>
+                        <p class="product__category">
+                            Ceramic pots
+                        </p>
+                        <p class="product__price">
+                            $249.90
+                        </p>
+                        <p class="product__detail">
+                            Faucibus lacus tincidunt molestie accumsan nibh non odio aenean molestie 
+                            purus tristique sed tempor consequat risus tellus amet augue egestas mauris 
+                            scelerisque donec ultrices.
+                        </p>
+                        <p class="product__detail">
+                            Sollicitudin facilisis massa pellentesque in ultrices enim nunc ac egestas 
+                            elementum ut in ornare sit malesuada.
+                        </p>
+                        <div class="product-btn">
+                            <input type="number" class="product-btn-quantity" value="1" min="1"></input>
+                            <button>Add to card</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <div class="product-info-top">
+                        <div>
+                            <span class="description-active"></span>
+                            <h3 class="product-info__description">Description</h3>
+                        </div>
+                        
+                        <div>
+                            <span class="reviews-active"></span>
+                            <h3 class="product-info__reviews">Reviews(<span>0</span>)</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="product-description">
+                        <p class="product__title">Maecenas efficitur ornare massa.</p>
+                        <p class="product__subtitle">
+                            Duis auctor nisl vitae purus interdum, quis congue lacus rutrum.
+                        </p>
+                        <p class="product__detail">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac 
+                            massa eget urna tempor vehicula vel id nisi. Pellentesque sed felis auctor, 
+                            molestie lectus vitae, elementum orci. In et nunc consequat, semper tellus 
+                            eget, euismod quam.
+                        </p>
+
+                        <div class="banner">
+                            <div class="banner-descriptions">
+                                <p class="banner-subtitle">Nunc tempus</p>
+                                <p class="banner-title">
+                                    Duis vel ipsum vitae est semper varius.
+                                </p>
+                                <p class="banner-detail">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="sad-plant-sign">
+                            <h2 class="sad-plant-sign__title">Sad Plants Signs</h2>
+                            <ul class="sad-plant-sign__list">
+                                <li class="sad-plant-sign__item">
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <p>Duis vel ipsum vitae est semper varius in id</p>
+                                </li>
+                                <li class="sad-plant-sign__item">
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <p>Class aptent taciti sociosqu</p>
+                                    
+                                </li>
+                                <li class="sad-plant-sign__item">
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <p>Litora torquent per conubia nostra per</p>
+                                </li>
+                                <li class="sad-plant-sign__item">
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <p>Inceptos himenaeos praesent</p>
+                                </li>
+                                <li class="sad-plant-sign__item">
+                                    <i class="fa-regular fa-circle-dot"></i>
+                                    <p>Fermentum elit eget</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="product-reviews show">
+                        <p class="review-subtitle">
+                            There are no reviews yet.
+                        </p>
+
+                        <div class="review-form-wrapper">
+                            <div class="review-form">
+                                <p class="comment-title">
+                                    Be the first to review “Bird of Paradise”
+                                </p>
+
+                                <form action="">
+                                    <p class="comment-notes">
+                                        Your email address will not be published. Required fields are marked *
+                                    </p>
+                                    <div class="comment-form-rating">
+                                        <label for="rating">
+                                            Your rating
+                                            <span class="required">*</span>
+                                        </label>
+                                        <p class="stars">                                      
+                                            <a href="#">
+                                                <i class="fa-regular fa-star"></i> 
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa-regular fa-star"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa-regular fa-star"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa-regular fa-star"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa-regular fa-star"></i>
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <p class="comment-form-comment">
+                                        <label for="comment">
+                                            Your review <span class="required">*</span>
+                                        </label>
+                                        </br><textarea name="comment" id="comment"></textarea>
+                                    </p>
+                                    <div class="comment-form-info">
+                                        <p class="comment-form-author">
+                                            <label for="author">
+                                                Name <span class="required">*</span>
+                                            </label>
+                                            </br><input type="text" name="name" id="name">
+                                        </p>
+                                        <p class="comment-form-email">
+                                            <label for="email">
+                                                Email <span class="required">*</span>
+                                            </label>
+                                            </br><input type="email" name="email" id="email">
+                                        </p>
+                                    </div>
+                                    
+                                    <p class="comment-form-cookies-consent">
+                                         <input type="checkbox" name="checkbox" id="checkbox">
+                                        <label for="checkbox">Save my name, email, and website in this browser for the next time I comment.</label>
+                                    </p>
+                                    <button class="form-submit">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="related-products">
+                <h2 class="related-products__title">Related products</h2>
+                <div class="related-list-products">
+                    <div class="related-product">
+                        <div class="related-product__image">
+                            <img src="./asset/img/FicusDecoraCabernet.jpg" alt="Ficus Decora Cabernet"> 
+                        
+                            <div class="related-product__cart">
+                                <span class="related-product__cart--content">
+                                    Add to cart
+                                </span>
+                                <i class="fa-solid fa-caret-right"></i>
+                                <i class="fa-solid fa-cart-shopping related-product__cart--icon"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="related-rating">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+            
+                        <p class="related-product__name">Bird of Paradise</p>
+                        <p class="related-product__category">Ceramic pots</p>
+                        <p class="related-product__price">$249.90</p>
+                    </div>
+
+                    <div class="related-product">
+                        <div class="related-product__image">
+                            <img src="./asset/img/FicusDecoraCabernet.jpg" alt="Ficus Decora Cabernet"> 
+                        
+                            <div class="related-product__cart">
+                                <span class="related-product__cart--content">
+                                    Add to cart
+                                </span>
+                                <i class="fa-solid fa-caret-right"></i>
+                                <i class="fa-solid fa-cart-shopping related-product__cart--icon"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="related-rating">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+            
+                        <p class="related-product__name">Bird of Paradise</p>
+                        <p class="related-product__category">Ceramic pots</p>
+                        <p class="related-product__price">$249.90</p>
+                    </div>
+
+                    <div class="related-product">
+                        <div class="related-product__image">
+                            <img src="./asset/img/FicusDecoraCabernet.jpg" alt="Ficus Decora Cabernet"> 
+                        
+                            <div class="related-product__cart">
+                                <span class="related-product__cart--content">
+                                    Add to cart
+                                </span>
+                                <i class="fa-solid fa-caret-right"></i>
+                                <i class="fa-solid fa-cart-shopping related-product__cart--icon"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="related-rating">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+            
+                        <p class="related-product__name">Bird of Paradise</p>
+                        <p class="related-product__category">Ceramic pots</p>
+                        <p class="related-product__price">$249.90</p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------FOOTER----------------- -->
+    <footer>
+        <nav class="footer__nav">
+            <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="plants.html">Plants</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <p class="footer__title">Subscribe to our newsletter</p>
+
+        <div class="footer__subcribe">
+            <input type="email" placeholder="Your email address...">
+            <button class="footer__subcribe-btn">Subcribe</button>
+        </div>
+
+        <div class="social">
+            <a href="index.html">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="index.html">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="index.html">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+        </div>
+        <p class="footer__author">@2024 developed by Nhat Dizi</p>
+    </footer>
+    <script src="./asset/js/cartTab.js"></script>
+    <script src="./asset/js/detail.js"></script>
+</body>
+</html>

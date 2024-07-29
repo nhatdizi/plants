@@ -1,0 +1,183 @@
+/* Desktop  */
+@media screen and (min-width: 1206px) {
+    .header__top{
+        padding: 34px 0px;
+    }
+
+    .sidebar{
+        display: none;
+    }
+
+    .header__logo{
+        margin-left: 50px;
+    }
+
+    .header__nav{
+        display: flex;
+    }
+
+    .header__actions{
+        margin-right: 50px;
+        gap: 30px;
+    }
+
+    /* .cart-tab{
+        width: 400px;
+    } */
+}
+
+
+@media screen and (max-width: 1205px) {
+    .header__top{
+        padding: 34px 0px;
+    }
+
+    .sidebar{
+        display: none;
+    }
+
+    .header__body{
+        margin-top: 85px;
+    }
+
+    .header__logo{
+        margin-left: 50px;
+    }
+
+    .header__nav{
+        display: flex;
+    }
+
+    .header__actions{
+        margin-right: 50px;
+        gap: 30px;
+    }
+
+    /* .cart-tab{
+        width: 400px;
+    } */
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .header__top{
+        padding: 34px 0px;
+    }
+
+    .sidebar{
+        display: none;
+    }
+
+    .header__logo{
+        margin-left: 50px;
+    }
+
+    .header__nav{
+        display: flex;
+    }
+
+    .header__actions{
+        margin-right: 50px;
+        gap: 30px;
+    }
+
+    /* .cart-tab{
+        width: 400px;
+    } */
+}
+
+@media screen and (max-width: 920px) {
+    .header__top{
+        padding: 34px 0px;
+    }
+
+    .sidebar{
+        display: flex;
+    }
+
+    .menubar, 
+    .close-menu{
+        margin-left: 40px;
+    }
+
+    .header__logo{
+        margin-left: 50px;
+    }
+
+    .header__nav{
+        display: none;
+    }
+
+    .header__actions{
+        margin-right: 40px;
+        gap: 30px;
+    }
+
+    /* .cart-tab{
+        width: 400px;
+    } */
+}
+
+
+/* Mobile */
+@media (max-width: 768px){
+    .header__top{
+        padding: 25px 0px;
+    }
+
+    .sidebar{
+        display: flex;
+    }
+
+    .menubar, 
+    .close-menu{
+        margin-left: 40px;
+    }
+
+    .header__logo{
+        margin-left: 30px;
+    }
+
+    .header__nav{
+        display: none;
+    }
+
+    .header__actions{
+        margin-right: 40px;
+        gap: 20px;
+    }
+
+    /* .cart-tab{
+        width: 400px;
+    } */
+
+}
+
+@media (max-width: 480px){
+
+    .header__top{
+        padding: 34px 0px 25px;
+    }
+
+    .sidebar{
+        display: flex;
+    }
+
+    .menubar, 
+    .close-menu{
+        margin-left: 30px;
+    }
+
+    .header__logo{
+        margin-left: 30px;
+    }
+
+    .header__nav{
+        display: none;
+    }
+
+    .header__actions{
+        margin-right: 30px;
+        gap: 20px;
+    }
+}

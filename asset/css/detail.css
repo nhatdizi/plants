@@ -1,0 +1,492 @@
+
+.container{
+    background-color: #f4f6f3;
+    padding: 65px 160px;
+}
+
+.container__filter{
+    background-color: #ffffff;
+    padding: 95px 20px 80px; 
+}
+
+.product{
+    margin: 0 86px;
+}
+
+/* -----------------------PRODUCT OVERVIEW----------------------- */
+
+.product-overview{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.product-gallery-img{
+    width: 500px;
+    height: 700px;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden; /*đảm bảo ảnh không vượt quá giới hạn khung*/
+}
+
+.product-gallery-img img{
+    position: absolute; /*đảm bảo ảnh di chuyển độc lập*/
+    width: 100%; /*làm cho ảnh lớn hơn vùng chứa*/
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*đặt ảnh ở giữa vùng chứa*/
+    object-fit: cover;
+    /* object-position: center center; */
+    transition: transform 0.1s;
+}
+
+.thumbnail-list {
+    display: flex;
+    gap: 15px;
+}
+
+.thumbnail{
+    width: 100px;
+    height: 100px;
+}
+
+.thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.thumbnail img:hover{
+    opacity: 100%;
+}
+
+.product-gallery-img i{
+    padding: 10px;
+    color: #4d4f48;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.product__details{
+    margin-top: 20px;
+}
+
+.product__name{
+    color: #141a0f;
+    font-size: 26px;
+    font-family: "Unna", serif;
+    margin-bottom: 15px;
+}
+
+.product__category, 
+.product__price, 
+.product__detail{
+    color: #4d4f48;
+    font-family: "DM Sans", sans-serif;
+}
+
+.product__category{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product__price{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product__detail{
+    margin: 10px 0px 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.product-btn{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.product-btn-quantity{
+    padding: 10px 5px;
+    width: 40px;
+    outline: none;
+    border: 1px solid #d6d8cc;
+}
+
+.product-btn button{
+    font-size: 15px;
+    padding: 10px 40px;
+    color: #ffffff;
+    background-color: #5c9735;
+    border: none;
+    cursor: pointer;
+}
+
+/* --------------------PRODUCT INFO--------------------- */
+.product-info{
+    margin-top: 80px;
+    border-top: 1px solid #d6d8cc;
+    position: relative;
+}
+
+.product-info-top{
+    padding: 8px 0;
+    display: flex;
+    gap: 20px;
+    color: #4d4f48;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.product__title,
+.product__subtitle{
+    color: #141a0f;
+    font-family: "Unna", serif;
+}
+
+.product__title{
+    font-size: 32px;
+    margin: 80px 0px 30px;
+}
+
+.product__subtitle{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.banner{
+    height: 485px;
+    background-image: url(../img/produuct-description-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.banner-descriptions{
+    width: 50%;
+    box-sizing: border-box;
+    color: #141a0f;
+    font-family: "Unna", serif;
+}
+
+.banner-subtitle{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.banner-title{
+    font-size: 32px;
+    margin: 10px 150px 10px 0px;
+    line-height: 1.4;
+}
+
+.banner-detail{
+    font-size: 24px;
+    margin-right: 50px;
+}
+
+/* ----------------------SAD PLANTS SIGNS-------------------- */
+
+.sad-plant-sign{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d6d8cc;
+}
+
+.sad-plant-sign__title{
+    color: #141a0f;
+    font-size: 32px;
+    font-family: "Unna", serif;
+}
+
+.sad-plant-sign__item{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    color: #4d4f48;
+    border-bottom: 1px solid #d6d8cc;
+}
+
+.sad-plant-sign__item:last-child{
+    border-bottom: none;
+    margin-bottom: 30px;
+}
+
+.sad-plant-sign__list{
+    width: 50%;
+}
+
+.sad-plant-sign__item i{
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+.sad-plant-sign__item p{
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+}
+
+
+/* ----------------------PRODUCT REVIEWS--------------------- */
+
+.product-reviews{
+    margin-top: 25px;
+    color: #4d4f48;
+    font-family: "DM Sans", sans-serif;
+}
+
+.review-subtitle{
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.review-form-wrapper{
+    border: 1px solid #d6d8cc;
+    padding: 30px;
+}
+
+.comment-title{
+    font-size: 21.44px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.comment-notes{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.comment-form-rating{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.comment-form-rating label,
+.comment-form-comment label{
+    font-size: 19.2px;
+    font-weight: 500;
+}
+
+.required{
+    color: red;
+}
+
+.comment-form-rating .stars a{
+    text-decoration: none;
+    color: #4d4f48;
+}
+
+.comment-form-comment{
+    margin-top: 20px;
+}
+
+.comment-form-comment textarea{
+    margin-top: 5px;
+    padding: 10px;
+    width: 97.5%;
+    height: 80px;
+    font-size: 17px;
+    border: 1px solid #d6d8cc;
+    outline: none;
+}
+
+.comment-form-comment textarea:focus{
+    border: 1px dashed #d6d8cc;
+}
+
+.comment-form-info{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.comment-form-author,
+.comment-form-email{
+    flex: 1; /* Đặt kích thước bằng nhau */
+    margin-top: 20px;
+}
+
+.comment-form-author label,
+.comment-form-email label{
+    font-size: 16px;
+}
+
+.comment-form-author input,
+.comment-form-email input{
+    width: 94%;
+    margin-top: 5px;
+    padding: 12px;
+    font-size: 18px;
+    border: 1px solid #d6d8cc;
+    outline: none;
+}
+
+.comment-form-author input:focus,
+.comment-form-email input:focus{
+    border: 1px dashed #d6d8cc;
+}
+
+.comment-form-cookies-consent{
+    margin: 20px 0px;
+    font-size: 16px;
+}
+
+.form-submit{
+    padding: 12px 35px;
+    color: #ffffff;
+    background-color: #5c9735;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.description-active,
+.reviews-active{
+    position: absolute;
+    top: 0;
+    height: 3px;
+    background-color: black;
+}
+
+.description-active{
+    width: 90px;
+    display: block;
+}
+
+.reviews-active{
+    width: 85px;
+    display: none;
+}
+
+.product-description.show{
+    display: none;
+}
+
+.product-reviews.show{
+    display: none;
+}
+/* -----------------------RELATED PRODUCTS----------------------- */
+
+.related-products{
+    margin: 0 86px 60px;
+}
+
+.related-products__title{
+    margin: 120px 0px 35px;
+    color: #141a0f;
+    font-size: 40px;
+    font-family: "Unna", serif;
+}
+
+.related-list-products{
+    display: flex;
+    gap: 20px;
+}
+
+.related-product__image {
+    width: 220px;
+    height: 340px;
+    object-fit: cover;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.related-product__image img{
+    width: 100%;
+    height: 100%;
+}
+
+.related-product__cart{
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.related-product__cart--content{
+    background-color: rgb(25, 24, 24);
+    color: hsl(0, 22%, 93%);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.related-product__cart--icon{
+    display: none;
+    margin-left: 5px;
+    padding: 10px;
+    background-color: rgb(220, 214, 214);
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.related-product__cart--content, 
+.fa-caret-right{
+    display: none;
+}
+
+.related-product__image:hover .related-product__cart--icon{
+    display: inline-block;
+}
+
+.related-product__cart--icon:hover{
+    opacity: 1;
+}
+
+.related-product__cart:hover .related-product__cart--content{
+    display: inline-block;
+}
+
+.related-product__cart:hover .fa-caret-right{
+    display: inline-block;
+}
+
+.related-rating{
+    margin: 5px 0px;
+}
+
+.related-rating i{
+    margin-right: -3px;
+    font-size: 13px;
+    color: rgb(10, 10, 9);
+}
+
+.related-product__name{
+    margin-top: 10px;
+    color: #141a0f;
+    font-size: 18px;
+    font-family: "Unna", serif;
+}
+
+.related-product__category{
+    margin: 10px 0px 8px;
+    color: #4d4f48;
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.related-product__price{
+    color: #141a0f;
+    font-size: 14.5px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+}

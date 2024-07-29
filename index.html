@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Shop</title>
+    <link rel="stylesheet" href="./asset/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/css/reset.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/footer.css">
+    <link rel="stylesheet" href="./asset/reponsive/main.css">
+    <link rel="stylesheet" href="./asset/reponsive/footer.css">
+</head>
+
+<body>
+    <header>
+        <div class="header__top">
+            <div class="sidebar">
+                <i class="fa-solid fa-bars fa-lg menubar"></i>
+                <i class="fa-solid fa-xmark fa-xl close-menu"></i>
+
+                <ul class="sidebar-list">
+                    <li class="header__nav-item">
+                        <a href="index.html" style="font-weight: bold;">Home</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="plants.html">Plants</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/site-logo-white.svg" class="header__logo-img" alt="site-logo-white">
+                </a>
+            </div>
+
+            <div class="header__right">
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="index.html" style="font-weight: bold;">Home</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="plants.html">Plants</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="about.html">About</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__actions">
+                    <div class="header__search">
+                        <input type="text" name="header__search-input" id="header__search-input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+    
+                    <div class="header__cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart__quantity">01</span>
+
+                        <div class="cart-tab">
+                            <div class="cart-top">
+                                <span>Shopping Cart</span>
+                                <i class="fa-solid fa-xmark cart-tab-close"></i>
+                            </div>
+                            
+                            <div class="list-cart">
+                                <div class="cart-item">
+                                    <div class="cart-item-description">
+                                        <div class="cart-item__img">
+                                            <a href="#" >
+                                                <img src="./asset/img/AraliaMing.jpg" alt="Aralia Ming">
+                                            </a>
+                                        </div>
+                                        <div class="cart-item__detail">
+                                            <a href="#">
+                                                <p class="cart-item__name">Aralia Ming</p>
+                                            </a>
+                                            <span class="cart-item__quantity">1</span>
+                                            <i class="fa-solid fa-xmark"></i>
+                                            <span class="cart-item__price">$284.90</span>
+                                        </div>
+                                    </div>
+
+                                    <i class="fa-solid fa-xmark close"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="subtotal">
+                                <span class="subtotal__name">Subtotal:</span>
+                                <span class="subtotal__price">$5000</span>
+                            </div>
+                            <div class="cart-tab-btn">
+                                <a href="cart.html" class="viewCart">
+                                    View Cart
+                                </a>
+                                <a href="checkout.html" class="checkout">
+                                    Checkout
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="header__account">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="header__account-dropdown">
+                            <div class="header__account-login">
+                                <a href="#">Login</a>
+                            </div>
+                            <div class="header__account-register">
+                                <a href="#">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__body">
+            <h3 class="header__welcome-massage">welcome to the greenstore</h3>
+
+            <h1 class="header__main-title">Let’s Bring the Spring to Your Home</h1>
+
+            <button class="header__button">shop now</button>
+        </div>
+        
+    </header>
+
+    <!-- ---------------New Plants------------------- -->
+    <section class="new__plants">
+        <h2 class="new__plants-title">New Plants</h2>
+
+        <a href="index.html">
+            <button class="new__plants-link">Shop Now</button>
+        </a>
+    </section>
+
+    <!-- ----------------PRODUCT-------------------- -->
+    <section class="products">
+        <div class="product">
+            <div class="product__image">
+                <img src="./asset/img/BirdnestJapanese.jpg" alt="Birdnest Japanese"> 
+            
+                <div class="product__cart">
+                    <span class="product__cart-content">
+                        Add to cart
+                    </span>
+                    <i class="fa-solid fa-caret-right"></i>
+                    <i class="fa-solid fa-cart-shopping product__cart-icon"></i>
+                </div>
+            </div>
+            
+            <div class="rating">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+
+            <p class="product__name">Birdnest Japanese</p>
+            <p class="product__category">Air purifying</p>
+            <p class="product__price">$84.90</p>
+        </div>
+
+        <div class="product">
+            <div class="product__image">
+                <img src="./asset/img/HoyaObovatum.jpg" alt="Hoya Obovatum"> 
+            
+                <div class="product__cart">
+                    <span class="product__cart-content">
+                        Add to cart
+                    </span>
+                    <i class="fa-solid fa-caret-right"></i>
+                    <i class="fa-solid fa-cart-shopping product__cart-icon"></i>
+                </div>
+            </div>
+            
+            <div class="rating">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+
+            <p class="product__name">Hoya Obovatum</p>
+            <p class="product__category">Indoor Plants</p>
+            <p class="product__price">$64.00</p>
+        </div>
+
+        <div class="product">
+            <div class="product__image">
+                <img src="./asset/img/MonsteraDeliciosa.jpg" alt="Monstera Deliciosa"> 
+            
+                <div class="product__cart">
+                    <span class="product__cart-content">
+                        Add to cart
+                    </span>
+                    <i class="fa-solid fa-caret-right"></i>
+                    <i class="fa-solid fa-cart-shopping product__cart-icon"></i>
+                </div>
+            </div>
+            
+            <div class="rating">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+
+            <p class="product__name">Monstera Deliciosa</p>
+            <p class="product__category">Air purifying</p>
+            <p class="product__price">$224.90</p>
+        </div>
+
+        <div class="product">
+            <div class="product__image">
+                <img src="./asset/img/ZzPlants.jpg" alt="Zz Plants"> 
+            
+                <div class="product__cart">
+                    <span class="product__cart-content">
+                        Add to cart
+                    </span>
+                    <i class="fa-solid fa-caret-right"></i>
+                    <i class="fa-solid fa-cart-shopping product__cart-icon"></i>
+                </div>
+            </div>
+            
+            <div class="rating">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+
+            <p class="product__name">Zz Plants</p>
+            <p class="product__category">Herbs seeds</p>
+            <p class="product__price">$124.90</p>
+        </div>
+
+        <div class="product">
+            <div class="product__image">
+                <img src="./asset/img/BirdofParadise.jpg" alt="Bird of Paradise"> 
+            
+                <div class="product__cart">
+                    <span class="product__cart-content">
+                        Add to cart
+                    </span>
+                    <i class="fa-solid fa-caret-right"></i>
+                    <i class="fa-solid fa-cart-shopping product__cart-icon"></i>
+                </div>
+            </div>
+            
+            <div class="rating">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+
+            <p class="product__name">Bird of Paradise</p>
+            <p class="product__category">Ceramic pots</p>
+            <p class="product__price">$249.90</p>
+        </div>
+
+        <div class="product">
+            <div class="product__image">
+                <img src="./asset/img/CalatheaBeautyStar.jpg" alt="Calathea Beauty Star"> 
+            
+                <div class="product__cart">
+                    <span class="product__cart-content">
+                        Add to cart
+                    </span>
+                    <i class="fa-solid fa-caret-right"></i>
+                    <i class="fa-solid fa-cart-shopping product__cart-icon"></i>
+                </div>
+            </div>
+            
+            <div class="rating">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+
+            <p class="product__name">Calathea Beauty Star</p>
+            <p class="product__category">Herbs seeds</p>
+            <p class="product__price">$79.90</p>
+        </div>
+    </section>
+
+    <!-- ---------------------OUR STORY------------------- -->
+    <section class="our-story">
+        <div class="our-story__left">
+            <img src="./asset/img/plants-store-story-section-img.jpg" alt="plants store story">
+        </div>
+
+        <div class="our-story__right">
+            <div class="our-story__content">
+                <h2 class="our-story__title">Our story</h2>
+                <p class="our-story__tagline">For People Who Love Plants</p>
+                <p class="our-story__description">Vivamus quam sociis tristique diam at donec nisl, 
+                    hendrerit leo nunc at velit lacinia porttitor a nulla tellus ultrices varius aliquet sed in placerat.
+                </p>
+                <p class="our-story__details">Facilisis eu faucibus diam cursus pulvinar consectetur purus sem felis, mauris consectetur
+                    nisl vitae gravida ultricies sem condimentum aliquet ut sed gravida amet vitae euismod pulvinar volutpat 
+                    laoreet pharetra.
+                </p>
+                <a href="index.html">
+                    <button class="our-story__btn">Read more</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------CUSTOMER REVIEW------------------ -->
+    <section class="customer-reviews">
+        <h2 class="customer-reviews__title">What Our Customers Say</h2>
+        <span class="customer-reviews__dash"></span>
+        <div class="customer-reviews__container">
+            <div class="customer-reviews__review">
+                <i class="fa-solid fa-quote-left"></i>
+                <p class="customer-reviews__content">
+                    Sed odio donec curabitur auctor amet tincidunt non odio 
+                    enim felis tincidunt amet morbi egestas hendrerit.
+                </p>
+                <img class="customer-reviews__avt" src="./asset/img/plants-store-testimonial-avatar-img.jpg" alt="JENNIFER LEWIS">
+                <p class="customer-reviews__name">JENNIFER LEWIS</p>
+            </div>
+
+            <div class="customer-reviews__review">
+                <i class="fa-solid fa-quote-left"></i>
+                <p class="customer-reviews__content">
+                    Sed odio donec curabitur auctor amet tincidunt non odio 
+                    enim felis tincidunt amet morbi egestas hendrerit.
+                </p>
+                <img class="customer-reviews__avt" src="./asset/img/plants-store-testimonials-avatar-img-1.jpg" alt="JENNIFER LEWIS">
+                <p class="customer-reviews__name">JUAN CARLOS</p>
+            </div>
+
+            <div class="customer-reviews__review">
+                <i class="fa-solid fa-quote-left"></i>
+                <p class="customer-reviews__content">
+                    Sed odio donec curabitur auctor amet tincidunt non odio 
+                    enim felis tincidunt amet morbi egestas hendrerit.
+                </p>
+                <img class="customer-reviews__avt" src="./asset/img/plants-store-testimonials-avatar-img-2.jpg" alt="JENNIFER LEWIS">
+                <p class="customer-reviews__name">ALICIA HEART</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------GIRD-CARD---------------- -->
+    <section class="gird-card">
+        <div class="gird-card__container">
+            <p class="gird-card__subtitle">GIFT CARD</p>
+            <p class="gird-card__title">
+                Give the Gift of Greenery
+            </p>
+            <p class="gird-card__description">
+                Pretium tortor risus enim neque quis pellentesque maecenas proin odio eget arcu
+            </p>
+            <a href="index.html">
+                <button class="gird-card__btn">Purchase A Gird Cart</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- ------------------SERVICE FEATURES------------------ -->
+    <section class="service">
+        <div class="service__feature">
+            <i class="fa-solid fa-lock"></i>
+            <div class="service__feature-content">
+                <p class="service__title">SECURE PAYMENT</p>
+                <p class="service__description">Curabitur interdum, nisl at tincidunt.</p>
+            </div>
+            <span class="service__column"></span>
+        </div>
+
+        <div class="service__feature">
+            <i class="fa-solid fa-box"></i>
+            <div class="service__feature-content">
+                <p class="service__title">DELIVERED WITH CARE</p>
+                <p class="service__description">Donec sit amet neque id nisl.</p>
+            </div>
+            <span class="service__column"></span>
+        </div>
+
+        <div class="service__feature">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+            <div class="service__feature-content">
+                <p class="service__title">EXCELLENT SERVICE</p>
+                <p class="service__description">Amet neque id nisl ullamcorper.</p>
+            </div>
+            <span class="service__column"></span>
+        </div>
+    </section>
+
+    <!-- ----------------FOOTER----------------- -->
+    <footer>
+        <nav class="footer__nav">
+            <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="plants.html">Plants</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <p class="footer__title">Subscribe to our newsletter</p>
+
+        <div class="footer__subcribe">
+            <input type="email" placeholder="Your email address...">
+            <button class="footer__subcribe-btn">Subcribe</button>
+        </div>
+
+        <div class="social">
+            <a href="index.html">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="index.html">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="index.html">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+        </div>
+        <p class="footer__author">@2024 developed by Nhat Dizi</p>
+    </footer>
+
+    <script src="./asset/js/cartTab.js"></script>
+</body>
+</html>

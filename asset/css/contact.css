@@ -1,0 +1,133 @@
+
+/* ------------------CONTACT INFO------------------- */
+.contact-info,
+.contact-form{
+    flex: 1;
+}
+
+.contact-info__title{
+    color: #141a0f;
+    font-family: "Unna", serif;
+}
+
+.contact-info__subtitle{
+    color: #4d4f48;
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.5;
+}
+
+.contact-info__item{
+    display: flex;
+    align-items: center;
+}
+
+.contact-info__item i{
+    color: #5c9735;
+    margin-right: 15px;
+}
+
+.contact-info__detail span{
+    color: #4d4f48;
+    font-family: "Unna", serif;
+    letter-spacing: 2px;
+}
+
+.contact-info__detail p{
+    margin-top: 15px;
+    color: #4d4f48;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+}
+
+.contact-info__row{
+    display: block;
+    width: 92%;
+    height: 0.5px;
+    background-color: #d6d8cc;
+}
+
+.contact-info__social p{
+    margin: 40px 0px 20px;
+    color: #141a0f;
+    font-family: "Unna", serif;
+    letter-spacing: 2px;
+}
+
+.contact-info__social a{
+    text-decoration: none;
+}
+
+.contact-info__social a i{
+    color: #141a0f;
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+/* ---------------CONTACT COLUMN----------------- */
+
+.contact-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 auto; /*flex item*/
+}
+
+.contact-column span{
+    display: block;
+    width: 0.5px;
+    height: 100%;
+    background-color: #d6d8cc;
+}
+
+/* --------------CONTACT FORM----------------- */
+.contact-form__title{
+    margin: 42px 0px 40px;
+    color: #141a0f;
+    font-family: "Unna", serif;
+}
+
+.contact-form__label{
+    color: #4d4f48;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+}
+
+.contact-form__required{
+    color: red;
+}
+
+.contact-form__input--name input,
+.contact-form__input--email input,
+.contact-form__input--comment textarea{
+    padding: 15px 12px;
+    margin: 10px 0 20px;
+    font-size: 15px;
+    font-family: "DM Sans", sans-serif;
+    outline: none;
+    border: 1px solid #d6d8cc;
+}
+
+.contact-form__input--comment textarea{
+    height: 85px;
+    /* font-size: 16px; */
+}
+
+.contact-form__submit{
+    padding: 11px 30px;
+    color: #ffffff;
+    background-color: #5c9735;
+    font-size: 15px;
+    font-family: "DM Sans", sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+.google-map{
+    margin-top: 40px;
+}
+
+.google-map iframe{
+    width: 100%;
+    height: 350px;
+    filter: grayscale(100%);
+}

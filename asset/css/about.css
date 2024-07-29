@@ -1,0 +1,165 @@
+/* -----------------------CONTAINER---------------------- */
+.about__left h1{
+    color: #141a0f;
+    font-family: "Unna", serif;
+}
+
+.about__right span{
+    display: block;
+    width: 65px;
+    background-color: #8d8e89;
+}
+
+.about__right-title{
+    margin-bottom: 28px;
+    color: #141a0f;
+    font-family: "Unna", serif;
+    font-weight: normal;
+}
+
+.about__right-description{
+    color: #4d4f48;
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.5;
+}
+
+.image{
+    width: auto;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ----------------------OUR STORY-------------------- */
+
+.our-story{
+    margin: 50px 0;
+    display: flex;
+}
+
+.our-story__left{
+    color: #4d4f48;
+    font-family: "Unna", serif;
+    letter-spacing: 2px;
+}
+
+.our-story__text{
+    padding-bottom: 16px;
+    color: #26222f;
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.5;
+}
+
+.our-story__right-icon{
+    margin: 20px 0px 15px;
+    font-size: 30px;
+    color: #afb0ac;
+}
+
+.our-story__text.our-story__text--bold{
+    margin: 0px 20px 20px 0px;
+    color: #141a0f;
+    font-size: 18px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+}
+
+.our-story__author{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.our-story__author img{
+    border-radius: 50%;
+}
+
+.author__name, .author__job{
+    font-family: "DM Sans", sans-serif;
+}
+
+.author__name{
+    color: #141a0f;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.author__job{
+    margin-top: 4px;
+    color: #4d4f48;
+    font-size: 13px;
+}
+
+/* -----------------COLLECTION--------------- */
+
+.wrapper__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.gallery{
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.25s;
+}
+
+.gallery.show{
+    /* z-index: 1;   */   /*nếu muốn đây z-index = 1 thì .gallery phải z-index = -1*/
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.control{
+    position: absolute;
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.prev{
+    left: 100px;
+}
+
+.next{
+    right: 100px;
+}
+
+.gallery__inner{
+    width: 42%;
+    margin: auto;
+}
+
+.gallery__inner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.gallery-close{
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    font-size: 25px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* .hide{
+    display: none;
+} */
+

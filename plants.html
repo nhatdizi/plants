@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants</title>
+    <link rel="stylesheet" href="./asset/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/css/reset.css">
+    <link rel="stylesheet" href="./asset/css/header.css">
+    <link rel="stylesheet" href="./asset/css/plants.css">
+    <link rel="stylesheet" href="./asset/css/footer.css">
+    <link rel="stylesheet" href="./asset/reponsive/header.css">
+    <link rel="stylesheet" href="./asset/reponsive/plants.css">
+    <link rel="stylesheet" href="./asset/reponsive/footer.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="header__top">
+            <div class="sidebar">
+                <i class="fa-solid fa-bars fa-lg menubar"></i>
+                <i class="fa-solid fa-xmark fa-xl close-menu"></i>
+
+                <ul class="sidebar-list">
+                    <li class="header__nav-item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="plants.html" style="font-weight: bold;">Plants</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="https://websitedemos.net/plant-shop-02/wp-content/uploads/sites/931/2021/08/site-logo.svg" class="header__logo-img" alt="site-logo-white">
+                </a>
+            </div>
+
+            <div class="header__right">
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="plants.html" style="font-weight: bold;">Plants</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="about.html">About</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__actions">
+                    <div class="header__search">
+                        <input type="text" name="header__search-input" id="header__search-input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+    
+                    <div class="header__cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart__quantity">01</span>
+
+                        <div class="cart-tab">
+                            <div class="cart-top">
+                                <span>Shopping Cart</span>
+                                <i class="fa-solid fa-xmark cart-tab-close"></i>
+                            </div>
+                            
+                            <div class="list-cart">
+                                <div class="cart-item">
+                                    <div class="cart-item-description">
+                                        <div class="cart-item__img">
+                                            <a href="#" >
+                                                <img src="./asset/img/AraliaMing.jpg" alt="Aralia Ming">
+                                            </a>
+                                        </div>
+                                        
+                                        <div class="cart-item__detail">
+                                            <a href="#">
+                                                <p class="cart-item__name">Aralia Ming</p>
+                                            </a>
+                                            <span class="cart-item__quantity">1</span>
+                                            <i class="fa-solid fa-xmark"></i>
+                                            <span class="cart-item__price">$284.90</span>
+                                        </div>
+                                    </div>
+
+                                    <i class="fa-solid fa-xmark close"></i>
+                                </div>
+                            </div>
+
+                            <div class="subtotal">
+                                <span class="subtotal__name">Subtotal:</span>
+                                <span class="subtotal__price">$5000</span>
+                            </div>
+                            <div class="cart-tab-btn">
+                                <a href="cart.html" class="viewCart">
+                                    View Cart
+                                </a>
+                                <a href="checkout.html" class="checkout">
+                                    Checkout
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="header__account">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="header__account-dropdown">
+                            <div class="header__account-login">
+                                <a href="#">Login</a>
+                            </div>
+                            <div class="header__account-register">
+                                <a href="#">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </header>
+
+    <!-- ---------------CONTAINER------------------- -->
+    <div class="container">
+        <div class="container__filter">
+            <div class="container-header">
+                <div class="container-header__link">
+                    <a href="index.html">Home</a>
+                    <span>/ Shop</span>
+                </div>
+    
+                <div class="container-header__filter">
+                    <div class="container-header__filter container-header__filter--left">
+                        <p>Showing 1-9 of 25 results</p>
+                    </div>
+                    <div class="container-header__filter container-header__filter--right">
+                        <select name="" id="">
+                            <option value="">Default sorting</option>
+                            <option value="">Sort by popularity</option>
+                            <option value="">Sort by average rating</option>
+                            <option value="">Sort by latest</option>
+                            <option value="">Sort by price: low to high</option>
+                            <option value="">Sort by price: high to low</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="product">
+                <div class="product__item">
+                    <div class="product__image">
+                        <img src="./asset/img/AlocasiaRegalShield.jpg" alt="Alocasia Regal Shield"> 
+                    
+                        <div class="product__cart">
+                            <span class="product__cart-content">
+                                Add to cart
+                            </span>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <i class="fa-solid fa-cart-shopping product__cart-icon"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="rating">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+        
+                    <p class="product__name">Alocasia Regal Shield</p>
+                    <p class="product__category">Air purifying</p>
+                    <p class="product__price">$204.90</p>
+                </div>
+
+                <div class="product__item">
+                    <div class="product__image">
+                        <img src="./asset/img/AraliaMing.jpg" alt="Aralia Ming"> 
+                    
+                        <div class="product__cart">
+                            <span class="product__cart-content">
+                                Add to cart
+                            </span>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <i class="fa-solid fa-cart-shopping product__cart-icon"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="rating">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+        
+                    <p class="product__name">Aralia Ming</p>
+                    <p class="product__category">Air purifying</p>
+                    <p class="product__price">$284.90</p>
+                </div>
+
+                <div class="product__item">
+                    <div class="product__image">
+                        <img src="./asset/img/BirdofParadise.jpg" alt="Bird of Paradise"> 
+                        <div class="product__cart">
+                            <span class="product__cart-content">
+                                Add to cart
+                            </span>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <i class="fa-solid fa-cart-shopping product__cart-icon"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="rating">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+        
+                    <p class="product__name">Bird of Paradise</p>
+                    <p class="product__category">Ceramic pots</p>
+                    <p class="product__price">$249.90</p>
+                </div>
+
+                <div class="product__item">
+                    <div class="product__image">
+                        <img src="./asset/img/BirdnestJapanese.jpg" alt="Birdnest Japanese"> 
+                    
+                        <div class="product__cart">
+                            <span class="product__cart-content">
+                                Add to cart
+                            </span>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <i class="fa-solid fa-cart-shopping product__cart-icon"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="rating">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+        
+                    <p class="product__name">Birdnest Japanese</p>
+                    <p class="product__category">Air purifying</p>
+                    <p class="product__price">$84.90</p>
+                </div>
+
+                <div class="product__item">
+                    <div class="product__image">
+                        <img src="./asset/img/BypassSecateur.jpg" alt="Bypass Secateur"> 
+                    
+                        <div class="product__cart">
+                            <span class="product__cart-content">
+                                Add to cart
+                            </span>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <i class="fa-solid fa-cart-shopping product__cart-icon"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="rating">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+        
+                    <p class="product__name">Bypass Secateur</p>
+                    <p class="product__category">Plant accessories</p>
+                    <p class="product__price">$48.90</p>
+                </div>
+
+                <div class="product__item">
+                    <div class="product__image">
+                        <img src="./asset/img/CalatheaBeautyStar.jpg" alt="Calathea Beauty Star"> 
+                    
+                        <div class="product__cart">
+                            <span class="product__cart-content">
+                                Add to cart
+                            </span>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <i class="fa-solid fa-cart-shopping product__cart-icon"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="rating">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+        
+                    <p class="product__name">Calathea Beauty Star</p>
+                    <p class="product__category">Herbs seeds</p>
+                    <p class="product__price">$79.90</p>
+                </div>
+
+                <div class="product__item">
+                    <div class="product__image">
+                        <img src="./asset/img/CalatheaRufibarba.jpg" alt="Calathea Rufibarba"> 
+                    
+                        <div class="product__cart">
+                            <span class="product__cart-content">
+                                Add to cart
+                            </span>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <i class="fa-solid fa-cart-shopping product__cart-icon"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="rating">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+        
+                    <p class="product__name">Calathea Rufibarba</p>
+                    <p class="product__category">Herbs seeds</p>
+                    <p class="product__price">$109.90</p>
+                </div>
+
+                <div class="product__item">
+                    <div class="product__image">
+                        <img src="./asset/img/DracaenaLisa.jpg" alt="Dracaena Lisa"> 
+                    
+                        <div class="product__cart">
+                            <span class="product__cart-content">
+                                Add to cart
+                            </span>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <i class="fa-solid fa-cart-shopping product__cart-icon"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="rating">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+        
+                    <p class="product__name">Dracaena Lisa</p>
+                    <p class="product__category">Air purifying</p>
+                    <p class="product__price">$114.90</p>
+                </div>
+
+                <div class="product__item">
+                    <div class="product__image">
+                        <img src="./asset/img/EuphorbiaIngens.jpg" alt="Euphorbia Ingens"> 
+                    
+                        <div class="product__cart">
+                            <span class="product__cart-content">
+                                Add to cart
+                            </span>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <i class="fa-solid fa-cart-shopping product__cart-icon"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="rating">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+        
+                    <p class="product__name">Ceramic pots</p>
+                    <p class="product__category">Air purifying</p>
+                    <p class="product__price">$104.90</p>
+                </div>
+            </div>
+            
+            <div class="btn-pages">
+                <a class="btn-pages__link bold" href="#">1</a>
+                <a class="btn-pages__link" href="#">2</a>
+                <a class="btn-pages__link" href="#">3</a>
+            </div>
+        </div>
+        
+    </div>
+    <!-- ----------------FOOTER----------------- -->
+    <footer>
+        <nav class="footer__nav">
+            <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="plants.html">Plants</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <p class="footer__title">Subscribe to our newsletter</p>
+
+        <div class="footer__subcribe">
+            <input type="email" placeholder="Your email address...">
+            <button class="footer__subcribe-btn">Subcribe</button>
+        </div>
+
+        <div class="social">
+            <a href="index.html">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="index.html">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="index.html">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+        </div>
+        <p class="footer__author">@2024 developed by Nhat Dizi</p>
+    </footer>
+    <script src="./asset/js/cartTab.js"></script>
+</body>
+</html>
