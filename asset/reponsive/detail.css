@@ -1,0 +1,384 @@
+/* Desktop  */
+
+@media screen and (min-width: 1025px) {
+    /* ------------------CONTAINER--------------- */
+    .container{
+        padding: 65px 160px;
+    }
+
+    .container__filter{
+        padding: 95px 20px 80px; 
+    }
+
+    .product{
+        margin: 0 86px;
+    }
+
+    .product-gallery-img{
+        width: 500px;
+        height: 700px;
+    }
+
+    .banner{
+        height: 485px;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    /* ------------------CONTAINER--------------- */
+    .container{
+        padding: 65px 25px;
+    }
+
+    .container__filter{
+        padding: 60px 35px 60px; 
+    }
+
+    .product{
+        margin: 0;
+    }
+
+    .product-overview{
+        gap: 30px;
+    }
+
+    .product-gallery-img{
+        width: 445px;
+        height: 668px;
+    }
+
+    .banner{
+        margin-top: 50px;
+        height: 380px;
+    }
+
+    .banner-title{
+        margin-right: 143px;
+    }
+
+    .banner-detail{
+        margin-right: 56px;
+        line-height: 1.2;
+    }
+
+    .sad-plant-sign__list {
+        width: 62%;
+    }
+
+    .related-products{
+        margin: 0 0 60px;
+    }
+
+}
+
+@media (max-width: 820px){
+    /* ------------------CONTAINER--------------- */
+    .container{
+        padding: 30px 25px;
+    }
+
+    .container__filter{
+        padding: 35px 35px 60px; 
+    }
+
+    .product{
+        margin: 0;
+    }
+
+    .product-overview{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .product-gallery-img{
+        width: 100%;
+        height: 1000px;
+    }
+
+    .thumbnail {
+        width: 175px;
+        height: 175px;
+    }
+
+    .product__title{
+        font-size: 28px;
+    }
+
+    .product__subtitle{
+        font-size: 18px;
+    }
+
+    .product__detail{
+        font-size: 15px;
+    }
+
+    .banner{
+        margin-top: 50px;
+        height: 380px;
+    }
+
+    .banner-subtitle{
+        font-size: 14px;
+    }
+
+    .banner-title{
+        font-size: 28px;
+        margin-right: 65px;
+    }
+
+    .banner-detail{
+        font-size: 22px;
+        margin-right: 56px;
+        line-height: 1.2;
+    }
+
+    .sad-plant-sign__title{
+        font-size: 28px;
+    }
+
+    .sad-plant-sign__list {
+        width: 62%;
+    }
+
+    .sad-plant-sign__item p{
+        font-size: 15px;
+    }
+
+    .related-products{
+        margin: 0 0 60px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px){
+    /* ------------------CONTAINER--------------- */
+    .container{
+        padding: 30px 25px;
+    }
+
+    .container__filter{
+        padding: 35px 35px 60px; 
+    }
+
+    .product{
+        margin: 0;
+    }
+
+    .product-overview{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .product-gallery-img{
+        width: 100%;
+        height: 1000px;
+    }
+
+    .thumbnail {
+        width: 175px;
+        height: 175px;
+    }
+
+    .product__title{
+        font-size: 28px;
+    }
+
+    .product__subtitle{
+        font-size: 18px;
+    }
+
+    .product__detail{
+        font-size: 15px;
+    }
+
+    .banner{
+        margin-top: 50px;
+        height: 380px;
+    }
+
+    .banner-subtitle{
+        font-size: 14px;
+    }
+
+    .banner-title{
+        font-size: 28px;
+        margin-right: 65px;
+    }
+
+    .banner-detail{
+        font-size: 22px;
+        margin-right: 40px;
+        line-height: 1.2;
+    }
+
+    .sad-plant-sign__title{
+        font-size: 28px;
+    }
+
+    .sad-plant-sign__list {
+        width: 62%;
+    }
+
+    .sad-plant-sign__item p{
+        font-size: 15px;
+    }
+
+    .related-products{
+        margin: 0 0 60px;
+    }
+
+    .related-products__title{
+        margin-top: 100px;
+        font-size: 32px;
+    }
+
+    .related-list-products{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .related-product__image{
+        width: 100%;
+        height: auto;
+    }
+
+    .related-rating i{
+        font-size: 10px;
+    }
+
+    .related-product__name{
+        font-size: 15px;
+    }
+
+    .related-product__category{
+        font-size: 0.74em;
+    }
+
+    .related-product__price{
+        font-size: 0.78em;
+    }
+}
+
+@media (max-width: 480px){
+    /* ------------------CONTAINER--------------- */
+    .container{
+        padding: 20px 10px;
+    }
+
+    .container__filter{
+        padding: 20px 15px; 
+    }
+
+    .product{
+        margin: 0;
+    }
+
+    .product-overview{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .product-gallery-img{
+        width: 100%;
+        height: 520px;
+    }
+
+    .thumbnail {
+        width: 105px;
+        height: 105px;
+    }
+
+    .product__title{
+        font-size: 24px;
+        margin-top: 50px;
+    }
+
+    .product__subtitle{
+        font-size: 16px;
+    }
+
+    .product__detail{
+        font-size: 14px;
+    }
+
+    .banner{
+        margin-top: 50px;
+        height: 270px;
+    }
+
+    .banner-descriptions{
+        width: 59%;
+    }
+
+    .banner-subtitle{
+        font-size: 14px;
+    }
+
+    .banner-title{
+        font-size: 24px;
+        margin-right: 0;
+    }
+
+    .banner-detail{
+        font-size: 20px;
+        margin-right: 0;
+        line-height: 1.2;
+    }
+
+    .sad-plant-sign{
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .sad-plant-sign__title{
+        font-size: 28px;
+    }
+
+    .sad-plant-sign__list {
+        width: 100%;
+    }
+
+    .sad-plant-sign__item p{
+        font-size: 15px;
+    }
+
+    .related-products{
+        margin: 0 0 60px;
+    }
+    
+    .product-info-top{
+        font-size: 15px;
+    }
+
+    .related-products__title{
+        margin-top: 100px;
+    }
+
+    .related-list-products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .related-product__image{
+        width: 100%;
+        height: auto;
+    }
+
+    .related-rating i{
+        font-size: 10px;
+    }
+
+    .related-product__name{
+        font-size: 15px;
+    }
+
+    .related-product__category{
+        font-size: 0.74em;
+    }
+
+    .related-product__price{
+        font-size: 0.78em;
+    }
+}
+

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="website icon" href="./asset/img/cropped-site-favicon-32x32.png">
-    <title>Contact - Plant Shop</title>
+    <title>Checkout - Plant Shop</title>
     <link rel="stylesheet" href="./asset/fontawesome-free-6.5.2-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,12 +14,12 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./asset/css/reset.css">
     <link rel="stylesheet" href="./asset/css/header.css">
-    <link rel="stylesheet" href="./asset/css/contact.css">
+    <link rel="stylesheet" href="./asset/css/checkout.css">
     <link rel="stylesheet" href="./asset/css/footer.css">
     <link rel="stylesheet" href="./asset/reponsive/header.css">
-    <link rel="stylesheet" href="./asset/reponsive/contact.css">
+    <link rel="stylesheet" href="./asset/reponsive/checkout.css">
     <link rel="stylesheet" href="./asset/reponsive/footer.css">
-
+    
 </head>
 
 <body>
@@ -40,7 +40,7 @@
                         <a href="about.html">About</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="contact.html" style="font-weight: bold;">Contact</a>
+                        <a href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -64,7 +64,7 @@
                             <a href="about.html">About</a>
                         </li>
                         <li class="header__nav-item">
-                            <a href="contact.html" style="font-weight: bold;">Contact</a>
+                            <a href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -96,6 +96,7 @@
                                                 <img src="./asset/img/AraliaMing.jpg" alt="Aralia Ming">
                                             </a>
                                         </div>
+                                        
                                         <div class="cart-item__detail">
                                             <a href="#">
                                                 <p class="cart-item__name">Aralia Ming</p>
@@ -109,7 +110,7 @@
                                     <i class="fa-solid fa-xmark close"></i>
                                 </div>
                             </div>
-                            
+
                             <div class="subtotal">
                                 <span class="subtotal__name">Subtotal:</span>
                                 <span class="subtotal__price">$5000</span>
@@ -142,92 +143,145 @@
     </header>
 
     <!-- ---------------CONTAINER------------------- -->
-    <section class="contact">
-        <div class="contact-info">
-            <h2 class="contact-info__title">Get In Touch</h2>
+    <div class="container">
+        <div class="container__filter">
+            <div class="checkout">
+                <h2 class="checkout-title">Checkout</h2>
 
-            <p class="contact-info__subtitle">
-                Sit vulputate faucibus eget eget scelerisque 
-                faucibus malesuada nullam mollis ut montes, 
-                dui scelerisque ornare.
-            </p>
+                <!-- -----------CHECKOUT COUPON---------------- -->
 
-            <div class="contact-info__item">
-                <i class="fa-solid fa-location-dot"></i>
-                <div class="contact-info__detail">
-                    <span>VISIT US</span>
-                    <p>123 Demo St, San Francisco, CA 45678, United States</p>
+                <div class="checkout-coupon">
+                    <div class="checkout-coupon-top">
+                        <i class="fa-regular fa-window-maximize"></i>
+                        <span class="checkout-coupon-text">Have a coupon?</span>
+                        <a href="#" class="checkout-coupon-link">Click here to enter your code</a>
+                    </div>
+
+                    <div class="checkout-coupon-form">
+                        <p>If you have a coupon code, please apply it below.</p>
+                        <input type="text" placeholder="Coupon code">
+                        <button class="checkout-form-btn">Apply Coupon</button>
+                    </div>
                 </div>
-            </div>
 
-            <div class="contact-info__item">
-                <i class="fa-solid fa-phone-flip"></i>
-                <div class="contact-info__detail">
-                    <span>CALL US</span>
-                    <p>+1 123-456-7890</p>
-                </div>
-            </div>
+                <!-- ------------- INFORMATION FORM-------------- -->
+                <form class="form-information" action="">
+                    <!-- ----------BILLING DETAILS---------- -->
+                    <div class="billing-details">
+                        <!-- customer information -->
+                        <p class="billing-top-title">customer information</p>
 
-            <div class="contact-info__item">
-                <i class="fa-solid fa-envelope"></i>
-                <div class="contact-info__detail">
-                    <span>EMAIL US</span>
-                    <p>mail@example.com</p>
-                </div>
-            </div>
+                        <div class="name-details">
+                            <div class="first-name-detail">
+                                <p>First name <span class="required">*</span></p>
+                                <input type="text">
+                            </div>
+                            <div class="last-name-detail">
+                                <p>Last name <span class="required">*</span></p>
+                                <input type="text">
+                            </div>
+                        </div>
 
-            <span class="contact-info__row"></span>
+                        <div class="street-address-detail">
+                            <p>Street address <span class="required">*</span></p>
+                            <input type="text">
+                        </div>
 
-            <div class="contact-info__social">
-                <p>FOLLOW US</p>
-                <a href="#">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-pinterest"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
+                        <div class="phone-detail">
+                            <p>Phone <span class="required">*</span></p>
+                            <input type="text">
+                        </div>
+
+                        <div class="email-detail">
+                            <p>Email address <span class="required">*</span></p>
+                            <input type="email">
+                        </div>
+
+                        <div class="logistics">
+                            <!-- payments -->
+                            <div class="logistict-payments">
+                            <p class="billing-payment-title">Payments</p>
+
+                            <div class="billing-payments">
+                                <select>
+                                    <option value="">Select</option>
+                                    <option value="">Payment on delivery</option>
+                                    <option value="">Payment by bank card</option>
+                                </select>
+                            </div>
+                            </div>
+
+                            <!-- form of transportation -->
+                            <div class="logistics-transport">
+                                <p class="transport-title">form of transportation</p>
+
+                                <div class="billing-transport">
+                                    <select>
+                                        <option value="">Select</option>
+                                        <option value="">Express delivery</option>
+                                        <option value="">Fast delivery</option>
+                                        <option value="">Economy delivery</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ------------YOUR ORDER------------ -->
+                     <div class="your-order">
+                        <p class="your-order-title">Your order</p>
+                        <div class="your-order-top">
+                            <span class="your-order-product">Product</span>
+                            <span class="your-order-subtotal">Subtotal</span>
+                        </div>
+
+                        <div class="your-order-body">
+                            <div class="order-body-product">
+                                <span class="order-product-name">
+                                    Aralia Ming × <span class="order-product-quantity">2</span>
+                                </span>
+                                <span class="product-price">$569.80</span>
+                            </div>
+
+                            <div class="order-body-product">
+                                <span class="order-product-name">
+                                    Aralia Ming × <span class="order-product-quantity">2</span>
+                                </span>
+                                <span class="product-price">$569.80</span>
+                            </div>
+
+                            <div class="order-body-product">
+                                <span class="order-product-name">
+                                    Aralia Ming × <span class="order-product-quantity">2</span>
+                                </span>
+                                <span class="product-price">$569.80</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="your-order-footer">
+                            <div class="order-shipping">
+                                <span>Shipping cost</span>
+                                <span>$30.00</span>
+                            </div>
+
+                            <div class="order-subtotal">
+                                <span>Subtotal</span>
+                                <span>$30.00</span>
+                            </div>
+
+                            <div class="order-total">
+                                <span>Total</span>
+                                <span>$30.00</span>
+                            </div>
+
+                            <button class="order-button">Place order</button>
+                        </div>
+                     </div>
+                </form>
+
             </div>
         </div>
-
-        <div class="contact-column">
-            <span></span>
-        </div>
-
-        <div class="contact-form">
-            <h2 class="contact-form__title">Drop us a line or two</h2>
-            <form action="">
-                <div class="contact-form__input contact-form__input--name">
-                    <label class="contact-form__label" for="name">Name</label>
-                    <span class="contact-form__required">*</span><br>
-                    <input type="text" id="name" placeholder="Full name">
-                </div>
-                <div class="contact-form__input contact-form__input--email">
-                    <label class="contact-form__label" for="email">Email</label>
-                    <span class="contact-form__required">*</span><br>
-                    <input type="email" id="email" placeholder="Email address">
-                </div>
-                <div class="contact-form__input contact-form__input--comment">
-                    <label class="contact-form__label" for="commentOrMessage">Comment or Message</label>
-                    <span class="contact-form__required">*</span><br>
-                    <textarea id="commentOrMessage" placeholder="Your message"></textarea>
-                </div>
-                <button class="contact-form__submit">Submit</button>
-            </form>
-        </div>
-    </section>
-
-    <div class="google-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59568.02813691364!2d105.71
-        952561331217!3d21.072591980205484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134552
-        2c2c40fdb%3A0xf09734667a0bd56!2zQuG6r2MgVOG7qyBMacOqbSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1
-        svi!2s!4v1721446012720!5m2!1svi!2s" width="600" height="450" style="border:0;" 
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <!-- ----------------FOOTER----------------- -->
@@ -269,7 +323,6 @@
         </div>
         <p class="footer__author">@2024 developed by Nhat Dizi</p>
     </footer>
-
     <script src="./asset/js/main.js"></script>
 </body>
 </html>

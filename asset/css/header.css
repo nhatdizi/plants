@@ -54,6 +54,8 @@ header{
 }
 
 .sidebar-list li a{
+    display: block;
+    width: 100%;
     color: #141a0f;
 }
 
@@ -79,6 +81,7 @@ header{
 
 .header__actions{
     display: flex;
+    align-items: center;
 }
 
 .header__actions i{
@@ -86,27 +89,49 @@ header{
     cursor: pointer;
 }
 
-/* .header__search{
-    border: 1px solid black;
-} */
-
-.header__search input{
-    display: none;
-    border: none;
-    outline: none;
-    padding-top: 2px;
+.header__search{
+    display: flex;
+    border-radius: 15px;
 }
 
-/* .header__search i{
+.header__search:hover{
+    background-color: #c4bebe;
+    opacity: 0.8;
+}
+
+.header__search:hover i{
+    color: #141a0f;
+}
+
+.header__search:hover .header-search-input{
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.header-search-input{
+    width: 0;
+    padding: 0;
+    background-color: #c4bebe;
     border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     outline: none;
-} */
+}
+
+.header__search-submit{
+    display: none;
+}
+
+.header__search i{
+    padding: 4px 5px 5px 0;
+}
 
 .header__cart{
     position: relative;
     /* background-color: yellow; */
     width: 20px;
     height: 20px;
+    padding-top: 2px;
 }
 
 .header__cart i{
@@ -120,8 +145,8 @@ header{
     background-color: #5c9735;
     border-radius: 50%;
     position: absolute;
-    top: -70%;
-    right: -65%;
+    top: -60%;
+    right: -42%;
 }
 
 .cart-tab{
@@ -132,10 +157,10 @@ header{
     opacity: 0;
     z-index: 0;
     top: 0;
-    right: 0;
+    /* right: 0; */
     pointer-events: none;
     right: -440px; /* Bắt đầu từ ngoài màn hình */
-    transition: right 0.1s ease, opacity 0.5s ease; /* Thêm hiệu ứng chuyển động */
+    transition: right 0.3s ease, opacity 0.8s ease; /* Thêm hiệu ứng chuyển động */
 }
 
 .cart-tab.show{
@@ -171,7 +196,7 @@ header{
 }
 
 .list-cart{
-    height: 76.1vh;
+    height: calc(100vh - 174px);
     overflow-y: scroll;
 }
 
@@ -285,10 +310,17 @@ header{
     display: none;
     position: absolute;
     top: 130%; /*đặt dưới icon user*/
-    left: 50%; /*căn giữa*/
+    left: 0; /*căn giữa*/
     transform: translateX(-32%); /*căn giữa*/
-    /* background-color: red; */
+    background-color: #c4bebe;
+    border-radius: 5px;
+}
 
+.header__account-dropdown a{
+    text-decoration: none;
+    color: #141a0f;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
 }
 
 .header__account:hover .header__account-dropdown{

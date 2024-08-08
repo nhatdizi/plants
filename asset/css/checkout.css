@@ -1,0 +1,284 @@
+
+.container{
+    background-color: #f4f6f3;
+    height: auto;
+}
+
+.container__filter{
+    background-color: #ffffff;
+    height: auto;
+}
+
+.checkout{
+    margin: 0 auto;
+    display: flex;             /*dùng để căn phải cho cart totals*/
+    flex-direction: column;
+}
+
+.checkout-title{
+    color: #141a0f;
+    font-size: 26px;
+    font-family: "Unna", serif;
+}
+
+/* --------------------CHECKOUT COUPON------------------ */
+.checkout-coupon{
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.checkout-coupon-top{
+    margin: 25px 0px;
+    background-color: #f7f6f7;
+    border-top: 3px solid #141a0f;
+}
+
+.checkout-coupon-top i{
+    color: #141a0f;
+    margin: 20px 10px 20px 30px;
+    font-size: 18px;
+}
+
+.checkout-coupon-text{
+    color: #515151;
+}
+
+.checkout-coupon-link{
+    color: #141a0f;
+    text-decoration: none;
+}
+
+.checkout-coupon-link:hover{
+    color: #00d084;
+    cursor: pointer;
+}
+
+.checkout-coupon-form{
+    margin: 40px 0px;
+    display: none;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.checkout-coupon-form.show{
+    display: block;
+}
+
+.checkout-coupon-form p{
+    color: #515151;
+    margin-bottom: 20px;
+}
+
+.checkout-coupon-form input{
+    width: 210px;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #d6d8cc;
+    outline: none;
+}
+
+.checkout-coupon-form input:focus{
+    border: 0.5px;
+    border-color: #141a0f;
+    border-style: dotted;
+}
+
+.checkout-form-btn{
+    padding: 8px 18px;
+    color: #ffffff;
+    background-color: #5c9735;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+}
+
+.checkout-form-btn:hover{
+    cursor: pointer;
+    background-color: #4d4f48;
+}
+
+
+/* ------------- INFORMATION FORM-------------- */
+.form-information{
+    display: flex;
+    gap: 50px;
+}
+
+/* ----------BILLING DETAILS---------- */
+.billing-details{
+    width: 58%;
+    color: #4d4f48;
+    font-size: 15px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+}
+
+.billing-top-title{
+    padding: 25px 0px 15px;
+    color: #141a0f;
+    font-size: 20px;
+    font-family: "Unna", serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-bottom: 1px solid #d6d8cc;
+}
+
+.required{
+    color: red;
+}
+
+.name-details{
+    margin: 30px 0px 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.first-name-detail, 
+.last-name-detail{
+    flex: 1;     /* vì flex: 1 áp dụng cho các phần tử con trực tiếp của phần tử cha flexbox( name-details) */
+}
+
+.first-name-detail input, 
+.last-name-detail input,
+.street-address-detail input, 
+.phone-detail input,
+.email-detail input{
+    width: 100%;
+    margin: 5px 0px 0px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #d6d8cc;
+    outline: none;
+}
+
+
+.first-name-detail input:focus, 
+.last-name-detail input:focus,
+.street-address-detail input:focus, 
+.phone-detail input:focus,
+.email-detail input:focus{
+    border: 0.5px dotted #141a0f
+}
+
+.street-address-detail, 
+.phone-detail,
+.email-detail{
+    margin: 0px 0px 20px;
+}
+
+/* --------------logistics------------- */
+
+.logistics{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    /* payments */
+.billing-payment-title,
+.transport-title{
+    padding: 20px 0px 15px;
+    color: #141a0f;
+    font-size: 20px;
+    font-family: "Unna", serif;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.billing-payments select,
+.billing-transport select{
+    padding: 10px;
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+    border: 1px solid #d6d8cc;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+/* -----------------------YOUR ORDER--------------------- */
+.your-order{
+    width: 37%;
+    border: 2px solid #d6d8cc;
+}
+
+.your-order-title{
+    padding: 30px 30px 20px;
+    color: #141a0f;
+    font-size: 20px;
+    font-family: "Unna", serif;
+    font-weight: bold;
+}
+
+.your-order-top, 
+.your-order-body,
+.your-order-footer{
+    width: 83%;
+    margin: 0 auto;
+    color: #4d4f48;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.your-order-top{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d6d8cc;
+}
+
+.your-order-product,
+.your-order-subtotal{
+    padding: 20px 0px 25px;
+    font-weight: bold;
+}
+
+.your-order-subtotal{
+    margin-right: 12px;
+}
+
+.your-order-body{
+    width: 83%;
+    margin: 0 auto;
+}
+
+.order-body-product,
+.order-shipping, 
+.order-subtotal, 
+.order-total{
+    padding: 16px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d6d8cc;
+}
+
+.order-body-product{
+    font-weight: 500;
+}
+
+.order-shipping, .order-subtotal, .order-total{
+    font-weight: bold;
+}
+
+.order-body-product span:last-child, 
+.order-shipping span:last-child,
+.order-subtotal span:last-child, 
+.order-total span:last-child{
+    margin-right: 12px;
+}
+
+.order-button{
+    width: 100%;
+    margin: 40px auto;
+    padding: 12px 30px;
+    color: #ffffff;
+    background-color: #5c9735;
+    font-size: 15px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+.order-button:hover{
+    cursor: pointer;
+    background-color: #4d4f48;
+}

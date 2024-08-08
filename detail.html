@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail</title>
+    <link rel="website icon" href="./asset/img/cropped-site-favicon-32x32.png">
+    <title>Detail - Plant Shop</title>
     <link rel="stylesheet" href="./asset/fontawesome-free-6.5.2-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="./asset/css/detail.css">
     <link rel="stylesheet" href="./asset/css/footer.css">
     <link rel="stylesheet" href="./asset/reponsive/header.css">
+    <link rel="stylesheet" href="./asset/reponsive/detail.css">
     <link rel="stylesheet" href="./asset/reponsive/footer.css">
 </head>
 
@@ -68,8 +70,11 @@
 
                 <div class="header__actions">
                     <div class="header__search">
-                        <input type="text" name="header__search-input" id="header__search-input">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <form action="#">
+                            <input type="search" class="header-search-input" placeholder="Search...">
+                            <input class="header__search-submit" type="submit" name="submit" id="submit">
+                            <label for="submit"><i class="fa-solid fa-magnifying-glass"></i></label>
+                        </form>
                     </div>
     
                     <div class="header__cart">
@@ -110,7 +115,7 @@
                                 <span class="subtotal__price">$5000</span>
                             </div>
                             <div class="cart-tab-btn">
-                                <a href="cart.html" class="viewCart">
+                                <a href="viewcart.html" class="viewCart">
                                     View Cart
                                 </a>
                                 <a href="checkout.html" class="checkout">
@@ -443,7 +448,7 @@
         </div>
         <p class="footer__author">@2024 developed by Nhat Dizi</p>
     </footer>
-    <script src="./asset/js/cartTab.js"></script>
+    <script src="./asset/js/main.js"></script>
     <script src="./asset/js/detail.js"></script>
 </body>
 </html>

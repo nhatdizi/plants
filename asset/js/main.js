@@ -3,13 +3,6 @@ const menu = document.querySelector('.menubar')
 const closeMenu = document.querySelector('.close-menu')
 const sideBarList = document.querySelector('.sidebar-list')
 
-/*-----------------CART TAB-----------------*/
-const cartIcon = document.querySelector('.header__cart i')
-const cartTab = document.querySelector('.cart-tab')
-const closeCartTab = document.querySelector('.cart-tab-close')
-const body = document.querySelector('body')
-
-/*-----------------MENU BAR-----------------*/
 menu.addEventListener('click', function(){
     menu.style.display = 'none';
     closeMenu.style.display = 'block';
@@ -22,9 +15,26 @@ closeMenu.addEventListener('click', function(){
     sideBarList.style.display = 'none';
 })
 
+
 /*-----------------CART TAB-----------------*/
+const cartIcon = document.querySelector('.header__cart i')
+const cartTab = document.querySelector('.cart-tab')
+const closeCartTab = document.querySelector('.cart-tab-close')
+const body = document.querySelector('body')
+
+// kiểm tra xem trang hiện tại có phải là viewcart.html hoặc checkout.html không
+function isCartPage(){
+    const path = window.location.pathname;
+    return path.includes('viewcart.html') || path.includes('checkout.html')
+}
 
 cartIcon.addEventListener('click', function(){
+
+    // nếu là trang viewcart hay checkout thì return (không mở cart-tab)
+    if(isCartPage()){
+        return;
+    }
+
     cartTab.classList.add('show')
     body.style.overflow = 'hidden' //ngăn cuộn trang
     body.style.pointerEvents = 'none'   //ngăn click vào các phần tử khác không phải là cartTab
@@ -51,4 +61,12 @@ document.addEventListener('keydown', function(e){
         body.style.overflow = '' 
         body.style.pointerEvents = ''
     }
+})
+
+/*---------------CHECKOUT---------------*/
+const checkoutCouponLink = document.querySelector('.checkout-coupon-link')
+const checkoutCouponForm = document.querySelector('.checkout-coupon-form')
+
+checkoutCouponLink.addEventListener('click', function(){
+    checkoutCouponForm.classList.toggle('show')
 })

@@ -101,6 +101,7 @@
 
 .product__cart:hover .product__cart-content{
     display: inline-block;
+    opacity: 0.9;
 }
 
 .product__cart:hover .fa-caret-right{

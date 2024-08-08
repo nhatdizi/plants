@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="website icon" href="./asset/img/cropped-site-favicon-32x32.png">
-    <title>Contact - Plant Shop</title>
+    <title>Cart - Plant Shop</title>
     <link rel="stylesheet" href="./asset/fontawesome-free-6.5.2-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,12 +14,12 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./asset/css/reset.css">
     <link rel="stylesheet" href="./asset/css/header.css">
-    <link rel="stylesheet" href="./asset/css/contact.css">
+    <link rel="stylesheet" href="./asset/css/viewcart.css">
     <link rel="stylesheet" href="./asset/css/footer.css">
     <link rel="stylesheet" href="./asset/reponsive/header.css">
-    <link rel="stylesheet" href="./asset/reponsive/contact.css">
+    <link rel="stylesheet" href="./asset/reponsive/viewcart.css">
     <link rel="stylesheet" href="./asset/reponsive/footer.css">
-
+    
 </head>
 
 <body>
@@ -40,7 +40,7 @@
                         <a href="about.html">About</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="contact.html" style="font-weight: bold;">Contact</a>
+                        <a href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -64,7 +64,7 @@
                             <a href="about.html">About</a>
                         </li>
                         <li class="header__nav-item">
-                            <a href="contact.html" style="font-weight: bold;">Contact</a>
+                            <a href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -96,6 +96,7 @@
                                                 <img src="./asset/img/AraliaMing.jpg" alt="Aralia Ming">
                                             </a>
                                         </div>
+                                        
                                         <div class="cart-item__detail">
                                             <a href="#">
                                                 <p class="cart-item__name">Aralia Ming</p>
@@ -109,7 +110,7 @@
                                     <i class="fa-solid fa-xmark close"></i>
                                 </div>
                             </div>
-                            
+
                             <div class="subtotal">
                                 <span class="subtotal__name">Subtotal:</span>
                                 <span class="subtotal__price">$5000</span>
@@ -142,92 +143,142 @@
     </header>
 
     <!-- ---------------CONTAINER------------------- -->
-    <section class="contact">
-        <div class="contact-info">
-            <h2 class="contact-info__title">Get In Touch</h2>
+    <div class="container">
+        <div class="container__filter">
+            <div class="view-cart">
+                <h2 class="view-cart-title">Cart</h2>
 
-            <p class="contact-info__subtitle">
-                Sit vulputate faucibus eget eget scelerisque 
-                faucibus malesuada nullam mollis ut montes, 
-                dui scelerisque ornare.
-            </p>
+                <!-- -----------VIEW CART TABLE---------------- -->
+                <table class="view-cart-table">
+                    <thead>
+                        <tr>
+                            <th class="product-remove"></th>
+                            <th class="product-image"></th>
+                            <th class="product-name">Product</th>
+                            <th class="product-price">Price</th>
+                            <th class="product-quantity">Quantity</th>
+                            <th class="product-subtotal">Subtotal</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr class="view-cart-table view-cart-item">
+                            <td class="product-remove">
+                                <i class="fa-solid fa-xmark"></i>
+                            </td>
+                            <td class="product-image">
+                                <div class="product-image__img">
+                                    <a href="#">
+                                        <img src="./asset/img/BirdofParadise.jpg" alt="BirdofParadise">
+                                    </a>
+                                </div>
+                                
+                            </td>
+                            <td class="product-name">
+                                <a href="#">
+                                    Birdof Paradise
+                                </a>
+                            </td>
+                            <td class="product-price">
+                                $249.90
+                            </td>
+                            <td class="product-quantity">
+                                <input type="number" value="1" min="0">
+                            </td>
+                            <td class="product-subtotal">
+                                $249.90
+                            </td> 
+                        </tr>
+                    </tbody>
 
-            <div class="contact-info__item">
-                <i class="fa-solid fa-location-dot"></i>
-                <div class="contact-info__detail">
-                    <span>VISIT US</span>
-                    <p>123 Demo St, San Francisco, CA 45678, United States</p>
+                    <tfoot>
+                        <tr>
+                            <td class="cart-coupon-code" colspan="2">
+                                <input type="text" name="" id="" placeholder="Coupon code">
+                            </td>
+
+                            <td class="cart-apply-code" colspan="2">
+                                <button class="cart-apply-btn">Apply Coupon</button>
+                            </td>
+
+                            <td class="cart-update" colspan="2">
+                                <button class="cart-update-btn">Update cart</button>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <!-- responsive mobile/tablet -->
+                <div class="view-cart-products">
+                    <div class="view-cart-product">
+                        <div class="item-remove">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+    
+                        <div class="item-image__img">
+                            <a href="#">
+                                <img src="./asset/img/BirdofParadise.jpg" alt="BirdofParadise">
+                            </a>
+                        </div>
+                            
+                        <div class="item-name">
+                            <span>Product:</span>
+                            <a href="#">
+                                Birdof Paradise
+                            </a>
+                        </div>
+    
+                        <div class="item-price">
+                            <span>Price:</span>
+                            <span>$249.90</span>
+                        </div>
+    
+                        <div class="item-quantity">
+                            <span>Quantity:</span>
+                            <input type="number" value="1" min="0">
+                        </div>
+    
+                        <div class="item-subtotal">
+                            <span>Subtotal:</span>
+                            <span>$249.90</span>                                
+                        </div> 
+    
+                        <div class="view-cart-action">
+                            <span class="action-coupon-code">
+                                <input type="text" name="" id="" placeholder="Coupon code">
+                            </span>
+    
+                            <span class="action-apply-code">
+                                <button class="cart-apply-btn">Apply Coupon</button>
+                            </span>
+    
+                            <span class="action-update">
+                                <button class="cart-update-btn">Update cart</button>
+                            </span>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="contact-info__item">
-                <i class="fa-solid fa-phone-flip"></i>
-                <div class="contact-info__detail">
-                    <span>CALL US</span>
-                    <p>+1 123-456-7890</p>
+                <!-- -----------------CART TOTALS------------------- -->
+                <div class="view-cart-totals">
+                    <p class="cart-totals-title">Cart totals</p>
+                    <div class="cart-totals-details">
+                        <span>Subtotal</span>
+                        <span class="subtotal-detail">$133.80</span>
+                    </div>
+                    <div class="cart-totals-details">
+                        <span>Total</span>
+                        <span class="total-detail">$133.80</span>
+                    </div>
+                    
+                    <div class="cart-totals-btn">
+                        <a href="checkout.html">
+                            <button>Buy now</button>
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="contact-info__item">
-                <i class="fa-solid fa-envelope"></i>
-                <div class="contact-info__detail">
-                    <span>EMAIL US</span>
-                    <p>mail@example.com</p>
-                </div>
-            </div>
-
-            <span class="contact-info__row"></span>
-
-            <div class="contact-info__social">
-                <p>FOLLOW US</p>
-                <a href="#">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-pinterest"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
             </div>
         </div>
-
-        <div class="contact-column">
-            <span></span>
-        </div>
-
-        <div class="contact-form">
-            <h2 class="contact-form__title">Drop us a line or two</h2>
-            <form action="">
-                <div class="contact-form__input contact-form__input--name">
-                    <label class="contact-form__label" for="name">Name</label>
-                    <span class="contact-form__required">*</span><br>
-                    <input type="text" id="name" placeholder="Full name">
-                </div>
-                <div class="contact-form__input contact-form__input--email">
-                    <label class="contact-form__label" for="email">Email</label>
-                    <span class="contact-form__required">*</span><br>
-                    <input type="email" id="email" placeholder="Email address">
-                </div>
-                <div class="contact-form__input contact-form__input--comment">
-                    <label class="contact-form__label" for="commentOrMessage">Comment or Message</label>
-                    <span class="contact-form__required">*</span><br>
-                    <textarea id="commentOrMessage" placeholder="Your message"></textarea>
-                </div>
-                <button class="contact-form__submit">Submit</button>
-            </form>
-        </div>
-    </section>
-
-    <div class="google-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59568.02813691364!2d105.71
-        952561331217!3d21.072591980205484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134552
-        2c2c40fdb%3A0xf09734667a0bd56!2zQuG6r2MgVOG7qyBMacOqbSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1
-        svi!2s!4v1721446012720!5m2!1svi!2s" width="600" height="450" style="border:0;" 
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <!-- ----------------FOOTER----------------- -->
@@ -269,7 +320,6 @@
         </div>
         <p class="footer__author">@2024 developed by Nhat Dizi</p>
     </footer>
-
     <script src="./asset/js/main.js"></script>
 </body>
 </html>

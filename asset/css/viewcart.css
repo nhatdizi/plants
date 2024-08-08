@@ -1,0 +1,331 @@
+
+.container{
+    background-color: #f4f6f3;
+    padding: 60px 150px;
+    height: auto;
+}
+
+.container__filter{
+    background-color: #ffffff;
+    padding: 90px 20px 80px; 
+    height: auto;
+}
+
+.view-cart{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;             /*dùng để căn phải cho cart totals*/
+    flex-direction: column;
+}
+
+.view-cart-title{
+    color: #141a0f;
+    font-size: 26px;
+    font-family: "Unna", serif;
+}
+
+/* --------------------TABLE------------------ */
+
+.view-cart-table{
+    margin-top: 30px;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #d6d8cc;
+}
+
+/* --------------------THEAD------------------ */
+
+.view-cart-table thead{
+    color: #4d4f48;
+    background-color: #fbfbfb;
+    border-bottom: 1px solid #d6d8cc;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+}
+
+.view-cart-table thead tr th{
+    padding: 14px 16px;
+    /* border: 1px solid #d6d8cc; */
+    text-align: left;
+}
+
+/* --------------------TBODY + THEAD------------------ */
+.view-cart-item{
+    width: 100%;
+}
+
+.view-cart-item td{    
+    vertical-align: middle;
+    /* border: 1px solid #d6d8cc; */
+}
+
+.product-remove{
+    width: 6%;
+    text-align: center;
+}
+
+.product-remove i{
+    padding: 4px 6px;
+    color: #c9cbc2;
+    border: 1px solid #d6d8cc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.product-image{
+    padding: 10px;
+    width: 15%;
+}
+
+.product-image__img{
+    float: left;
+    width: 50%;
+    height: 110px;
+    margin: 0px auto;
+}
+
+.product-image__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.product-name{
+    padding: 10px;
+    width: 25%;
+}
+
+.product-price, .product-subtotal, .product-quantity {
+    padding: 10px;
+    width: 13%;
+}
+
+.view-cart-item .product-name a,
+.view-cart-item .product-price,
+.view-cart-item .product-subtotal,
+.view-cart-item .product-quantity input{
+    color: #4d4f48;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.view-cart-item .product-name a{
+    text-decoration: none;
+    color: #141a0f;
+    font-weight: 500;
+}
+
+.view-cart-item .product-quantity input{
+    width: 35px;
+    padding: 5px 10px;
+    border: 1px solid #d6d8cc;
+    outline: none;
+}
+
+.view-cart-item .product-quantity input:focus{
+    border-style: dashed;
+}
+
+/* --------------------TFOOT------------------ */
+
+.view-cart-table tfoot{
+    padding: 10px 15px;
+}
+
+.cart-coupon-code{
+    padding: 14px 16px;
+}
+
+.cart-coupon-code input{
+    width: 90%;
+    font-size: 14px;
+    margin-right: 4px;
+    padding: 8px 12px;
+    border: 1px solid #d6d8cc;
+    outline: none;
+}
+
+.cart-coupon-code input:focus{
+    border-color: #141a0f;
+    border-style: dotted;
+}
+
+.cart-apply-btn, .cart-update-btn{
+    padding: 10px 25px;
+    color: #ffffff;
+    background-color: #5c9735;
+    font-size: 15px;
+    font-family: "DM Sans", sans-serif;
+    border: none;
+    
+}
+
+.cart-apply-btn:hover{
+    cursor: pointer;
+    background-color: #4d4f48;
+}
+
+.cart-update{
+    text-align: right;
+    padding-right: 20px;
+}
+
+.cart-update-btn{
+    padding: 8px 15px;
+    opacity: 0.5;
+}
+
+.cart-update-btn:hover{
+    cursor: not-allowed;
+    background-color: #4d4f48;
+}
+
+/* responsive mobile/tablet */
+.view-cart-product{
+    margin-top: 20px;
+    border: 1px solid #d6d8cc;
+}
+
+.item-remove{
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid #d6d8cc;
+}
+
+.item-remove i{
+    margin: 0 10px 0 auto;
+    padding: 4px 6px;
+    color: #c9cbc2;
+    border: 1px solid #d6d8cc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.item-image__img{
+    width: 100px;
+    height: auto;
+    margin: 10px auto;
+}
+
+.item-image__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.item-name, .item-price,
+.item-quantity, .item-subtotal{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #141a0f;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    border-top: 1px solid #d6d8cc;
+}
+
+.item-name a{
+    text-decoration: none;
+}
+
+.item-name span, 
+.item-price span:first-child,
+.item-quantity span:first-child, 
+.item-subtotal span:first-child{
+    font-weight: bold;
+}
+
+.item-quantity{
+    padding: 15px 20px;
+}
+
+.item-quantity input{
+    width: 40px;
+    padding: 5px 10px;
+    border: 1px solid #d6d8cc;
+    outline: none;
+}
+
+.view-cart-action{
+    padding: 10px 20px;
+    border-top: 1px solid #d6d8cc;
+}
+
+.action-coupon-code input{
+    width: 145px;
+    margin-right: 5px;
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #d6d8cc;
+    outline: none;
+}
+
+.action-update .cart-update-btn{
+    font-size: 12px;
+    padding: 6px 12px;
+}
+
+/* ------------------CART TOTALS------------------- */
+.view-cart-totals{
+    width: 50%;
+    margin: 30px 0px;
+    margin-left: auto;   /*căn phải */
+    border: 1px solid #d6d8cc;
+}
+
+.cart-totals-title{
+    padding: 15px 19px;
+    color: #141a0f;
+    background-color: #fbfbfb;
+    border-bottom: 1px solid #d6d8cc;
+    font-size: 19px;
+    font-family: "Unna", serif;
+    font-weight: bold;
+}
+
+.cart-totals-details{
+    width: 85%;
+    margin: 0 auto;
+    padding: 15px;
+    color: #4d4f48;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    border-bottom: 1px solid #d6d8cc;
+}
+
+.cart-totals-details span:first-child{
+    margin: 20px;
+    font-weight: 500;
+}
+
+.subtotal-detail{
+    margin-left: 100px;
+}
+
+.total-detail{
+    margin-left: 127px;
+}
+
+.cart-totals-btn{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.cart-totals-btn button{
+    text-transform: uppercase;;
+    padding: 10px 25px;
+    color: #ffffff;
+    background-color: #5c9735;
+    font-size: 15px;
+    font-family: "DM Sans", sans-serif;
+    border: none;
+}
+
+.cart-totals-btn button:hover{
+    cursor: pointer;
+    background-color: #4d4f48;
+}

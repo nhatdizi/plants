@@ -1,16 +1,10 @@
 
 .container{
     background-color: #f4f6f3;
-    padding: 65px 160px;
 }
 
 .container__filter{
-    background-color: #ffffff;
-    padding: 95px 20px 80px; 
-}
-
-.product{
-    margin: 0 86px;
+    background-color: #ffffff; 
 }
 
 /* -----------------------PRODUCT OVERVIEW----------------------- */
@@ -22,8 +16,6 @@
 }
 
 .product-gallery-img{
-    width: 500px;
-    height: 700px;
     margin-bottom: 15px;
     position: relative;
     overflow: hidden; /*đảm bảo ảnh không vượt quá giới hạn khung*/
@@ -166,7 +158,6 @@
 }
 
 .banner{
-    height: 485px;
     background-image: url(../img/produuct-description-bg.jpg);
     background-position: center center;
     background-size: cover;

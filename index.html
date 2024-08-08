@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plant Shop</title>
+    <link rel="website icon" href="./asset/img/cropped-site-favicon-32x32.png">
+    <title>Home - Plant Shop</title>
     <link rel="stylesheet" href="./asset/fontawesome-free-6.5.2-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,8 +68,11 @@
 
                 <div class="header__actions">
                     <div class="header__search">
-                        <input type="text" name="header__search-input" id="header__search-input">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <form action="#">
+                            <input type="search" class="header-search-input" placeholder="Search...">
+                            <input class="header__search-submit" type="submit" name="submit" id="submit">
+                            <label for="submit"><i class="fa-solid fa-magnifying-glass"></i></label>
+                        </form>
                     </div>
     
                     <div class="header__cart">
@@ -108,7 +112,7 @@
                                 <span class="subtotal__price">$5000</span>
                             </div>
                             <div class="cart-tab-btn">
-                                <a href="cart.html" class="viewCart">
+                                <a href="viewcart.html" class="viewCart">
                                     View Cart
                                 </a>
                                 <a href="checkout.html" class="checkout">
@@ -122,10 +126,10 @@
                         <i class="fa-solid fa-user"></i>
                         <div class="header__account-dropdown">
                             <div class="header__account-login">
-                                <a href="#">Login</a>
+                                <a href="./auth/login.html">Login</a>
                             </div>
                             <div class="header__account-register">
-                                <a href="#">Register</a>
+                                <a href="./auth/register.html">Register</a>
                             </div>
                         </div>
                     </div>
@@ -138,7 +142,9 @@
 
             <h1 class="header__main-title">Let’s Bring the Spring to Your Home</h1>
 
-            <button class="header__button">shop now</button>
+            <a href="plants.html">
+                <button class="header__button">shop now</button>
+            </a>         
         </div>
         
     </header>
@@ -147,7 +153,7 @@
     <section class="new__plants">
         <h2 class="new__plants-title">New Plants</h2>
 
-        <a href="index.html">
+        <a href="plants.html">
             <button class="new__plants-link">Shop Now</button>
         </a>
     </section>
@@ -156,7 +162,9 @@
     <section class="products">
         <div class="product">
             <div class="product__image">
-                <img src="./asset/img/BirdnestJapanese.jpg" alt="Birdnest Japanese"> 
+                <a href="detail.html">
+                    <img src="./asset/img/BirdnestJapanese.jpg" alt="Birdnest Japanese"> 
+                </a>
             
                 <div class="product__cart">
                     <span class="product__cart-content">
@@ -175,7 +183,9 @@
                 <i class="fa-regular fa-star"></i>
             </div>
 
-            <p class="product__name">Birdnest Japanese</p>
+            <a href="detail.html" style="text-decoration: none;">
+                <p class="product__name">Birdnest Japanese</p>
+            </a>
             <p class="product__category">Air purifying</p>
             <p class="product__price">$84.90</p>
         </div>
@@ -458,6 +468,6 @@
         <p class="footer__author">@2024 developed by Nhat Dizi</p>
     </footer>
 
-    <script src="./asset/js/cartTab.js"></script>
+    <script src="./asset/js/main.js"></script>
 </body>
 </html>
