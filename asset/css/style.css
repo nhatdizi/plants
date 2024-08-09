@@ -158,7 +158,7 @@ header{
 
 .cart-tab{
     width: 400px;
-    height: 100vh;
+    height: 100%;
     background-color: #ffffff;
     position: fixed;
     opacity: 0;
