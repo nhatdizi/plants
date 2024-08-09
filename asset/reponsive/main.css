@@ -621,9 +621,14 @@
         width: 120px;
     }
 
-    /* .cart-tab{
-        width: 400px;
-    } */
+    .list-cart{
+        height: calc(100% - 174.5px);
+    }
+
+    .header__account-dropdown{
+        top: 145%; 
+        left: -10px;
+    }
 
     .header__welcome-massage{
         font-size: 14px;
@@ -870,6 +875,15 @@
 
     .cart-tab{
         width: 100%;
+    }
+
+    .list-cart{
+        height: calc(100% - 174.5px);
+    }
+
+    .header__account-dropdown{
+        top: 145%; /*đặt dưới icon user*/
+        left: -26px; /*căn giữa*/
     }
 
     .header__welcome-massage{
